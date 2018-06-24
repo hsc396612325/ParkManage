@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.heshu.parkmanage.activity.ParkDetailsActivity"
+    tools:showIn="@layout/activity_park_details">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="车场地址"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/park_site"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/text"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="南山区科技园南区R2-B三楼"
+                    android:textSize="14dp" />
+
+                <ImageView
+                    android:id="@+id/park_navigation"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_location" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.4dp"
+                    android:layout_below="@+id/park_site"
+                    android:layout_marginTop="12dp"
+                    android:background="#C0C0C0" />
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="false"
+                    android:layout_below="@+id/park_site"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="22dp"
+                    android:text="车场电话"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/park_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/park_site"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_toRightOf="@+id/text2"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="18700968831"
+                    android:textSize="14dp" />
+
+                <ImageView
+                    android:id="@+id/park_call"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/park_site"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="22dp"
+                    android:src="@drawable/ic_phone" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.4dp"
+                    android:layout_below="@+id/park_phone"
+                    android:layout_marginTop="12dp"
+                    android:background="#C0C0C0" />
+
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/park_phone"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="22dp"
+                    android:text="资费标准"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/park_selling"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/park_phone"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_toRightOf="@+id/text3"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="12元/小时"
+                    android:textSize="14dp" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.4dp"
+                    android:layout_below="@+id/park_selling"
+                    android:layout_marginTop="12dp"
+                    android:background="#C0C0C0" />
+
+                <TextView
+                    android:id="@+id/text11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/park_selling"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="22dp"
+                    android:text="车位情况"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/park_place"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/park_selling"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_toRightOf="@+id/text11"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="10/200"
+                    android:textSize="14dp" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.4dp"
+                    android:layout_below="@+id/park_place"
+                    android:layout_marginTop="12dp"
+                    android:background="#C0C0C0" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="联系电话"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/user_phone"
+                    android:layout_width="230dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/text4"
+                    android:background="@null"
+                    android:gravity="left|bottom"
+                    android:inputType="phone"
+                    android:text="15291364638"
+                    android:textColor="#FF888888"
+                    android:textSize="14dp" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.4dp"
+                    android:layout_below="@+id/user_phone"
+                    android:layout_marginTop="12dp"
+                    android:background="#C0C0C0" />
+
+                <RelativeLayout
+                    android:id="@+id/line_car"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/user_phone"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="选择车辆"
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/user_car"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@+id/text5"
+                        android:text="车辆1"
+                        android:textSize="14dp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:text="选择 >"
+                        android:textSize="13dp" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.4dp"
+                    android:layout_below="@+id/line_car"
+
+                    android:background="#C0C0C0" />
+
+
+                <RelativeLayout
+                    android:id="@+id/line_place"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/line_car"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="选择车位"
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/user_place"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@+id/text6"
+                        android:text="15号"
+                        android:textSize="14dp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:text="选择 >"
+                        android:textSize="13dp" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.4dp"
+                    android:layout_below="@+id/line_place"
+                    android:layout_marginTop="0dp"
+                    android:background="#C0C0C0" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <RelativeLayout
+                    android:id="@+id/line_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="预约时常"
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/user_order"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@+id/text7"
+                        android:text=""
+                        android:textSize="14dp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:text="选择 >"
+                        android:textSize="13dp" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.4dp"
+                    android:layout_below="@+id/line_order"
+                    android:background="#C0C0C0" />
+
+                <TextView
+                    android:id="@+id/text8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/line_order"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="备注"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/user_remark"
+                    android:layout_width="230dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/line_order"
+                    android:layout_marginLeft="45dp"
+                    android:layout_toRightOf="@+id/text8"
+                    android:background="@null"
+                    android:gravity="left|bottom"
+                    android:hint="请输入备注"
+                    android:inputType="phone"
+                    android:textColor="#FF888888"
+                    android:textSize="14dp" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.4dp"
+                    android:layout_below="@+id/user_remark"
+                    android:layout_marginTop="12dp"
+                    android:background="#C0C0C0" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="注意事项:"
+                    android:textColor="#E3170D"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/text10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/attention_text"
+                    android:textSize="15dp" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.4dp"
+                    android:layout_below="@+id/text10"
+                    android:layout_marginTop="15dp"
+                    android:background="#C0C0C0" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

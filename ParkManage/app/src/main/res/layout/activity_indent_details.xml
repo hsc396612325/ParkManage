@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context="com.example.heshu.parkmanage.activity.IndentDetailsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_collapseMode="pin"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <android.support.v4.widget.NestedScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.example.heshu.parkmanage.activity.IndentDetailsActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:src="@drawable/bg_order" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/line1"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/view"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/park_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="顺丰停车场"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="20dp"
+                            android:gravity="right|center"
+                            android:text="再次预约 >"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/line1"
+                        android:layout_marginBottom="8dp"
+                        android:background="#F5F5F5">
+
+                        <ImageView
+                            android:id="@+id/park_image"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="4dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/default_park" />
+
+                        <TextView
+                            android:id="@+id/park_distance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_toRightOf="@+id/park_image"
+                            android:text="车位:15号" />
+
+                        <TextView
+                            android:id="@+id/park_selling"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/park_distance"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_toRightOf="@+id/park_image"
+                            android:text="收费:12元/小时" />
+
+                        <TextView
+                            android:id="@+id/park_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/park_selling"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_toRightOf="@+id/park_image"
+                            android:text="联系电话:18700968831" />
+
+                        <TextView
+                            android:id="@+id/park_site"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/park_phone"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_toRightOf="@+id/park_image"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="地址:子午大道旁218号" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/line2"
+                        android:layout_width="match_parent"
+                        android:layout_height="38dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="订单号" />
+
+                        <TextView
+                            android:id="@+id/order_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="center"
+                            android:text="120180607758469598" />
+
+                        <TextView
+                            android:id="@+id/order_state"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="25dp"
+                            android:gravity="right|center"
+                            android:text="正在预约"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/line3"
+                        android:layout_width="match_parent"
+                        android:layout_height="38dp"
+                        android:layout_below="@id/line2"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="订单金额" />
+
+                        <TextView
+                            android:id="@+id/money_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="center"
+                            android:text="￥35"
+                            android:textColor="@color/colorPrimaryDark" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/line4"
+                        android:layout_width="match_parent"
+                        android:layout_height="38dp"
+                        android:layout_below="@id/line3"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="实际金额" />
+
+                        <TextView
+                            android:id="@+id/reality_money_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="center"
+                            android:text="￥35"
+                            android:textColor="#f03038" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/line5"
+                        android:layout_width="match_parent"
+                        android:layout_height="38dp"
+                        android:layout_below="@id/line4"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="停靠车辆" />
+
+                        <TextView
+                            android:id="@+id/user_car"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="center"
+                            android:text="车辆1" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/line6"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="预约时间" />
+
+                        <TextView
+                            android:id="@+id/order_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="center"
+                            android:text="2018.01.23 11:20" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/line7"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_below="@id/line6"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="停车时间" />
+
+                        <TextView
+                            android:id="@+id/stop_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="center"
+                            android:text="2018.01.23 14:20" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/line8"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_below="@id/line7"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="离开时间" />
+
+                        <TextView
+                            android:id="@+id/leave_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="center"
+                            android:text="2018.01.24 12:00" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="注意事项:"
+                        android:textColor="#E3170D"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/text10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/attention_text"
+                        android:textSize="15dp" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="0.4dp"
+                        android:layout_below="@+id/text10"
+                        android:layout_marginTop="15dp"
+                        android:background="#C0C0C0" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="80dp" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>
